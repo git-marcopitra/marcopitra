@@ -15,10 +15,26 @@
     flex-direction: column;
     background-color: black;
     color: white;
+    animation: welcome 4s infinite;
 }
 
 .site-name {
     font-size: 5rem;
     text-transform: capitalize;
     color: white!important;
+}
+
+@keyframes welcome {
+    0% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1);
+    }
+    90% {
+        transform: scale(2);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
