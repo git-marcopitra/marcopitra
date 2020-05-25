@@ -19,7 +19,6 @@ body {
     justify-content: center;
     flex-direction: column;
     background-color: black;
-    animation: welcome 4s infinite;
 }
 
 .site-name {
@@ -27,6 +26,10 @@ body {
     font-size: 5rem;
     text-transform: capitalize;
     color: white!important;
+}
+
+.building {
+    animation: welcome 4s infinite;
 }
 
 footer {
