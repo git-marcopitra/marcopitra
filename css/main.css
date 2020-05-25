@@ -6,6 +6,11 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    color: white;
+}
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -14,14 +19,36 @@
     justify-content: center;
     flex-direction: column;
     background-color: black;
-    color: white;
     animation: welcome 4s infinite;
 }
 
 .site-name {
+    opacity: .7;
     font-size: 5rem;
     text-transform: capitalize;
     color: white!important;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: transparent;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    margin: 1rem;
+    transition: all 300ms;
+    font-size: 1.4rem 
+}
+
+.social-media a:hover {
+    transform: scale(2);
 }
 
 @keyframes welcome {
