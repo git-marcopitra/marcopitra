@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/font-awesome-5-pro/css/all.min.css">
-    <link rel="stylesheet" href="./dist/petr-material/petr-material.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <title>Marco Pitra</title>
 </head>
 <body>
     <div id="particles-js"></div>
-    <div class="wrapper">
-        <h1 class="site-name">Marco Pitra</h1>
-        <p class="building">Site em construção...</p>
+    <div id="typed-strings" class="wrapper">
+        <h1 class="site-name">Marco <strong>Pitra</strong></h1>
+        <p class="building"> O site está em desenvolvimento...</p>
     </div>
+    <span id="typed"></span>
     <footer>
         <div class="social-media">
             <a href="https://www.facebook.com/mpkikinho/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -25,5 +26,12 @@
         </div>
     </footer>
     <script src="js/particles.js"></script>
+    <script>
+        var typed = new Typed('#typed', {
+          stringsElements: 'typed-strings',
+          typeSpeed: 300,
+          startDelay: 1000
+        });
+    </script>
 </body>
 </html>
