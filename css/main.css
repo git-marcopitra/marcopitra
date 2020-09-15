@@ -11,9 +11,30 @@ body {
     color: white;
 }
 
-.wrapper {
+main {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand {
+    margin: 3rem 0 0 3rem;
+    width: 4rem;
+}
+
+.brand img {
+    width: 100%;
+}
+
+.wrapper {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,8 +55,7 @@ body {
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100vw;
     background-color: transparent;
 }
